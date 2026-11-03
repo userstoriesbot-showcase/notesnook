@@ -55,7 +55,7 @@ export default defineConfig({
     minify: "esbuild",
     cssMinify: true,
     emptyOutDir: true,
-    sourcemap: !isDesktop,
+    sourcemap: false, // showcase fork only: keeps the build within the demo container memory
     rollupOptions: {
       output: {
         plugins: [emitEditorStyles()],
